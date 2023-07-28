@@ -9,7 +9,7 @@ export class FormatoFechaPipe implements PipeTransform {
       setTimeout(() => {
         const resultado: string = `${fecha.getDate()}/${fecha.getMonth() + 1}/${fecha.getFullYear()} a las ${fecha.getHours()}:${fecha.getMinutes()}`;
         resolve(resultado);
-      }, 500); // Simulating a 500ms delay for the asynchronous operation
+      }, 500); 
     });
   }
 }
